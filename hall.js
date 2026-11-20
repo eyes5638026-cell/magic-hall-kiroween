@@ -17,8 +17,8 @@
       loading:'Lighting the candles…',enter:'Enter the hall',soundNote:'Enter with sound · mute any time',
       sampleNote:'An original, fictional collection made for this public demo.',exploreEyebrow:'YOUR MEMORIES, ALIGHT',
       exploreTitle:'Follow a little light.',exploreDetail:'<span class="gold-dot"></span> Gold for art <span class="blue-dot"></span> Blue for music',
-      nowPlaying:'THE BLUE CANDLES',sourceShort:'Its story ↗',nextArt:'Find a picture',nextSong:'Another song',collection:'Collection',
-      sceneFootnote:'Fictional demo collection · no personal archive',artEyebrow:'FROM A GOLDEN CANDLE',source:'Return to the conversation ↗',
+      nowPlaying:'THE BLUE CANDLES',sourceShort:'Its story',nextArt:'Find a picture',nextSong:'Another song',collection:'Collection',
+      sceneFootnote:'Fictional demo collection · no personal archive',artEyebrow:'FROM A GOLDEN CANDLE',source:'Return to the conversation',
       storyEyebrow:'WHERE IT BEGAN',fictionLabel:'Fictional conversation · created for this demo',
       storyFootnote:'A creation is richer when you can return to its first spark.',collectionEyebrow:'A FEW THINGS WORTH KEEPING',
       collectionTitle:'The collection',aboutEyebrow:'THE IDEA BEHIND THE HALL',aboutTitle:'Keep the spark.',
@@ -36,8 +36,8 @@
       loading:'正在点亮烛火……',enter:'推门进去',soundNote:'入场会响起音乐 · 随时可以静音',
       sampleNote:'本公开演示使用专门创作的虚构画作、音乐与对话。',exploreEyebrow:'让记忆重新亮起来',
       exploreTitle:'循着一小束光。',exploreDetail:'<span class="gold-dot"></span> 金色是画 <span class="blue-dot"></span> 蓝色是歌',
-      nowPlaying:'蓝色烛火正在歌唱',sourceShort:'这首歌的来处 ↗',nextArt:'找一幅画',nextSong:'换一首歌',collection:'藏品',
-      sceneFootnote:'虚构演示藏品 · 不含个人资料库',artEyebrow:'来自一盏金色烛火',source:'潜回那段对话 ↗',
+      nowPlaying:'蓝色烛火正在歌唱',sourceShort:'这首歌的来处',nextArt:'找一幅画',nextSong:'换一首歌',collection:'藏品',
+      sceneFootnote:'虚构演示藏品 · 不含个人资料库',artEyebrow:'来自一盏金色烛火',source:'潜回那段对话',
       storyEyebrow:'它诞生的那一刻',fictionLabel:'虚构对话 · 为本演示创作',
       storyFootnote:'一件作品的温度，也藏在它最初的那一点心动里。',collectionEyebrow:'几件值得留住的小事',collectionTitle:'藏品',
       aboutEyebrow:'大殿的由来',aboutTitle:'把心动留下来。',
@@ -162,7 +162,7 @@
     if(currentSong){$('songTitle').textContent=localized(currentSong.title);$('songMeta').textContent=tr('originalMusic');}
     $('player').classList.toggle('paused',audio.paused);
     $('playPause').setAttribute('aria-label',tr(audio.paused?'play':'pause'));
-    $('playPause').firstElementChild.textContent=audio.paused?'▶':'Ⅱ';
+    $('playPause').querySelector('path').setAttribute('d',audio.paused?'M5 3 12 8 5 13Z':'M4 3h3v10H4zM9 3h3v10H9z');
     $('mute').textContent=audio.muted?'♩':'♪';$('mute').setAttribute('aria-label',tr(audio.muted?'unmute':'mute'));$('mute').title=tr(audio.muted?'unmute':'mute');
   }
   function openStory(id){currentStory=data.stories.find(s=>s.id===id);if(!currentStory)return;updateStory();if(!$('storyDialog').open)$('storyDialog').showModal();}

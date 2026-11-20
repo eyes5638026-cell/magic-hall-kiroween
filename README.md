@@ -6,6 +6,12 @@ Magic Hall gives conversational creations a place to live together. Enter a quie
 
 This is the public Kiroween edition. The included collection is entirely fictional and was created specifically for sharing. It does not connect to a personal archive.
 
+## Try the public demo
+
+[Open Magic Hall](https://eyes5638026-cell.github.io/magic-hall-kiroween/) · [Source code](https://github.com/eyes5638026-cell/magic-hall-kiroween)
+
+No account is required. Select **Enter the hall** to begin; sound starts only after that click.
+
 ## Run locally
 
 No build step, package installation, API key or backend is required. With Python 3 available:

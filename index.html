@@ -28,7 +28,7 @@
       <p class="intro-line" data-i18n="intro">Some moments deserve more than a folder.</p>
       <div class="intro-rule" aria-hidden="true"><span></span>✧<span></span></div>
       <p class="intro-detail" data-i18n="introDetail">A gold candle holds a picture. A blue candle holds a song.<br>Each one remembers where it began.</p>
-      <button id="enter" class="enter-button" disabled><span data-i18n="loading">Lighting the candles…</span><span aria-hidden="true">↗</span></button>
+      <button id="enter" class="enter-button" disabled><span data-i18n="loading">Lighting the candles…</span><svg class="ui-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M4 4h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <p class="sound-note" data-i18n="soundNote">Enter with sound · mute any time</p>
     </div>
     <p class="intro-footnote" data-i18n="sampleNote">An original, fictional collection made for this public demo.</p>
@@ -41,9 +41,9 @@
       <p data-i18n="exploreDetail"><span class="gold-dot"></span> Gold for art <span class="blue-dot"></span> Blue for music</p>
     </section>
     <div id="player" class="player paused" hidden>
-      <button id="playPause" class="play-button" aria-label="Play music"><span aria-hidden="true">▶</span></button>
+      <button id="playPause" class="play-button" aria-label="Play music"><svg class="ui-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3 12 8 5 13Z" fill="currentColor"/></svg></button>
       <div class="track-info"><p class="track-label" data-i18n="nowPlaying">THE BLUE CANDLES</p><div id="songTitle">—</div><div id="songMeta"></div></div>
-      <button id="songSource" class="source-link" data-i18n="sourceShort">Its story ↗</button>
+      <button id="songSource" class="source-link"><span data-i18n="sourceShort">Its story</span> <svg class="ui-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M4 4h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
     <nav id="controls" class="controls" aria-label="Gallery controls" hidden>
       <button id="nextArt" class="control-button"><span class="gold-dot"></span><span data-i18n="nextArt">Find a picture</span></button>
@@ -57,7 +57,7 @@
   <div id="status" class="sr-only" role="status" aria-live="polite"></div>
   <dialog id="artDialog" class="art-dialog" aria-labelledby="artTitle">
     <button id="artClose" class="close-button" aria-label="Return picture to its candle">×</button>
-    <figure><img id="artImage" src="" alt=""><figcaption><p class="eyebrow" data-i18n="artEyebrow">FROM A GOLDEN CANDLE</p><h2 id="artTitle"></h2><p id="artDescription"></p><div class="art-footer"><span id="artMeta"></span><button id="artSource" class="source-link" data-i18n="source">Return to the conversation ↗</button></div></figcaption></figure>
+    <figure><img id="artImage" src="" alt=""><figcaption><p class="eyebrow" data-i18n="artEyebrow">FROM A GOLDEN CANDLE</p><h2 id="artTitle"></h2><p id="artDescription"></p><div class="art-footer"><span id="artMeta"></span><button id="artSource" class="source-link"><span data-i18n="source">Return to the conversation</span> <svg class="ui-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M4 4h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></figcaption></figure>
   </dialog>
   <dialog id="storyDialog" class="story-dialog" aria-labelledby="storyTitle">
     <header><div><p class="eyebrow" data-i18n="storyEyebrow">WHERE IT BEGAN</p><h2 id="storyTitle"></h2></div><button id="storyClose" class="close-button" aria-label="Close conversation">×</button></header>
