@@ -1,0 +1,37 @@
+{
+  "collection": "Fictional public demo collection",
+  "license": "CC0-1.0",
+  "paintings": [
+    {"id":"lantern-orchard","title":{"en":"The Lantern Orchard","zh":"灯笼果园"},"src":"assets/art/lantern-orchard.svg","alt":{"en":"Golden lantern fruit hang from a sweeping tree above a blue-green hillside at night.","zh":"深蓝夜空下，一棵弯曲的树结满金色灯笼果实，立在蓝绿的山坡上。"},"description":{"en":"A small light, planted carefully, can become a whole orchard.","zh":"把一小束光认真种下，也许会长成一片果园。"},"story":"orchard"},
+    {"id":"moon-house","title":{"en":"A House for the Moon","zh":"给月亮的一间屋"},"src":"assets/art/moon-house.svg","alt":{"en":"A quiet peach-colored house with a glowing arched doorway sits below an oversized pale moon.","zh":"桃色的小屋开着一扇发光的拱门，头顶悬着一轮很大的淡金色月亮。"},"description":{"en":"An imaginary place where even the night can feel at home.","zh":"一个想象中的住处，连夜晚也可以安心回来。"},"story":"moon"},
+    {"id":"tidepool-stars","title":{"en":"Tidepool Constellations","zh":"潮池里的星座"},"src":"assets/art/tidepool-stars.svg","alt":{"en":"Tiny gold stars form constellations in layered turquoise tide pools beside a dark ocean.","zh":"深色海面旁，层层青蓝色潮池里有金色小星星连成的星座。"},"description":{"en":"The tide leaves; the little things it revealed remain.","zh":"潮水退去，把刚刚发现的小东西留了下来。"},"story":"tide"},
+    {"id":"paper-door","title":{"en":"The Paper Door","zh":"纸做的门"},"src":"assets/art/paper-door.svg","alt":{"en":"A folded paper doorway glows turquoise between geometric amber hills, with a small paper bird nearby.","zh":"几何形的暖金山丘间，一扇折纸门透出青绿色的光，一只小纸鸟从旁边飞过。"},"description":{"en":"A beginning does not need to be grand. It only needs to open.","zh":"开始不必很隆重，有一扇能推开的门就好。"},"story":"door"}
+  ],
+  "songs": [
+    {"id":"light-left-on","title":{"en":"A Light Left On","zh":"留一盏灯"},"src":"assets/audio/light-left-on.wav","story":"orchard"},
+    {"id":"letters-to-tide","title":{"en":"Letters to the Tide","zh":"写给潮水的信"},"src":"assets/audio/letters-to-tide.wav","story":"tide"},
+    {"id":"under-glass-sky","title":{"en":"Under the Glass Sky","zh":"玻璃天空之下"},"src":"assets/audio/under-glass-sky.wav","story":"moon"}
+  ],
+  "stories": [
+    {"id":"orchard","title":{"en":"What if a small kindness grew?","zh":"如果小小的善意会长大呢？"},"messages":[
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"I want to remember the small things: a warm cup, a patient reply, someone leaving a light on. Could they become a place?","zh":"我想记住那些小事：一杯温热的茶，一句耐心的回答，还有谁为我留的一盏灯。它们可以变成一个地方吗？"}},
+      {"role":"assistant","speaker":{"en":"THE COMPANION","zh":"一起想象的人"},"text":{"en":"Let's plant each one as a lantern. Give them time and room. An orchard could grow from all the ordinary care we nearly forgot.","zh":"那就把每一件都种成一盏灯笼，给它一点时间和空间。那些差点被忘记的日常照顾，也能长成一片果园。"}},
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"Keep the night blue. Make the lights gentle. And give the orchard a little melody, so I can find it with my eyes closed.","zh":"夜晚要是蓝色的，灯光要轻一点。再给果园一段小小的旋律，让我闭上眼睛也能找到它。"}}
+    ]},
+    {"id":"moon","title":{"en":"A room for the wandering moon","zh":"给四处游走的月亮留一间房"},"messages":[
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"The moon is always visiting everyone else's windows. Where does it go when it wants to come home?","zh":"月亮总是在别人的窗外做客。它想回家的时候，会去哪里呢？"}},
+      {"role":"assistant","speaker":{"en":"THE COMPANION","zh":"一起想象的人"},"text":{"en":"Perhaps a little house with a doorway tall enough for its light. No clocks, no demands—just a quiet stair and one welcoming window.","zh":"也许是一间小屋，门足够高，能装下它的光。没有时钟，也没有催促，只有安静的台阶和一扇欢迎它的窗。"}},
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"Then that's what I'd like to make today: a picture that feels like being welcomed, and a song with room to breathe.","zh":"那今天就做这个吧：一幅让人觉得被欢迎的画，和一首留着呼吸空隙的歌。"}}
+    ]},
+    {"id":"tide","title":{"en":"The things the tide returns","zh":"潮水送回来的小东西"},"messages":[
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"I walked along an imaginary shore and found tiny stars in the tide pools. None of them were in a hurry to become a constellation.","zh":"我走在一片想象中的海岸边，看见潮池里有小星星。它们都不着急连成一个星座。"}},
+      {"role":"assistant","speaker":{"en":"THE COMPANION","zh":"一起想象的人"},"text":{"en":"Then let's leave some space between them. A pattern can appear slowly. A memory can be beautiful before we know what it means.","zh":"那就在它们之间多留一点空隙。图案可以慢慢出现，一段记忆也可以先很美，再慢慢知道它的意思。"}},
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"Paint that. And let the music arrive like water: a few notes, a pause, then a few more.","zh":"把它画下来吧。音乐也像水一样来：几个音符，停一下，再来几个。"}}
+    ]},
+    {"id":"door","title":{"en":"The smallest possible beginning","zh":"一个尽可能小的开始"},"messages":[
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"I have a whole impossible world in mind, but today I only have one sheet of paper.","zh":"我脑子里有一个不可能的世界，可今天手上只有一张纸。"}},
+      {"role":"assistant","speaker":{"en":"THE COMPANION","zh":"一起想象的人"},"text":{"en":"A sheet is enough for a door. We can fold it, stand it up, and choose what color the light on the other side should be.","zh":"一张纸也够做一扇门。我们把它折好，立起来，再选一选门那一边的光是什么颜色。"}},
+      {"role":"human","speaker":{"en":"THE DREAMER","zh":"想象的人"},"text":{"en":"Turquoise. And one paper bird to go first. I can follow when I'm ready.","zh":"青绿色。再折一只小纸鸟先飞过去，等我准备好了，就跟着它走。"}}
+    ]}
+  ]
+}

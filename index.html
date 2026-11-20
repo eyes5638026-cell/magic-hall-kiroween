@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1120">
+  <meta name="description" content="A living memory gallery. Gold candles hold art; blue candles hold music. Follow each creation back to the conversation that inspired it.">
+  <title>Magic Hall — A living memory gallery</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="hall.css">
+</head>
+<body>
+  <div id="hallBackdrop" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Magic Hall home"><span class="brand-star" aria-hidden="true">✧</span> <span>MAGIC HALL</span></a>
+    <div class="masthead-actions">
+      <button id="aboutButton" class="text-button" data-i18n="about">The idea</button>
+      <button id="languageButton" class="language-button" aria-label="Switch to Chinese">中文</button>
+      <button id="settingsButton" class="icon-button" aria-label="Atmosphere settings" title="Atmosphere settings">☷</button>
+    </div>
+  </header>
+  <section id="door" aria-labelledby="introTitle">
+    <div class="door-inner">
+      <p class="eyebrow" data-i18n="eyebrow">A LIVING MEMORY GALLERY</p>
+      <h1 id="introTitle">Magic <em>Hall</em></h1>
+      <p class="intro-line" data-i18n="intro">Some moments deserve more than a folder.</p>
+      <div class="intro-rule" aria-hidden="true"><span></span>✧<span></span></div>
+      <p class="intro-detail" data-i18n="introDetail">A gold candle holds a picture. A blue candle holds a song.<br>Each one remembers where it began.</p>
+      <button id="enter" class="enter-button" disabled><span data-i18n="loading">Lighting the candles…</span><span aria-hidden="true">↗</span></button>
+      <p class="sound-note" data-i18n="soundNote">Enter with sound · mute any time</p>
+    </div>
+    <p class="intro-footnote" data-i18n="sampleNote">An original, fictional collection made for this public demo.</p>
+  </section>
+  <main id="experience" inert>
+    <div id="candleTargets" class="candle-targets" aria-label="Memory candles" hidden></div>
+    <section id="sceneCaption" class="scene-caption" hidden aria-label="How to explore">
+      <p class="eyebrow" data-i18n="exploreEyebrow">YOUR MEMORIES, ALIGHT</p>
+      <h2 data-i18n="exploreTitle">Follow a little light.</h2>
+      <p data-i18n="exploreDetail"><span class="gold-dot"></span> Gold for art <span class="blue-dot"></span> Blue for music</p>
+    </section>
+    <div id="player" class="player paused" hidden>
+      <button id="playPause" class="play-button" aria-label="Play music"><span aria-hidden="true">▶</span></button>
+      <div class="track-info"><p class="track-label" data-i18n="nowPlaying">THE BLUE CANDLES</p><div id="songTitle">—</div><div id="songMeta"></div></div>
+      <button id="songSource" class="source-link" data-i18n="sourceShort">Its story ↗</button>
+    </div>
+    <nav id="controls" class="controls" aria-label="Gallery controls" hidden>
+      <button id="nextArt" class="control-button"><span class="gold-dot"></span><span data-i18n="nextArt">Find a picture</span></button>
+      <button id="nextSong" class="control-button"><span class="blue-dot"></span><span data-i18n="nextSong">Another song</span></button>
+      <button id="collectionButton" class="control-button" data-i18n="collection">Collection</button>
+      <button id="mute" class="icon-button" aria-label="Mute music" title="Mute music">♪</button>
+    </nav>
+    <p class="scene-footnote" id="sceneFootnote" data-i18n="sceneFootnote" hidden>Fictional demo collection · no personal archive</p>
+  </main>
+  <div id="hint" role="tooltip" hidden></div>
+  <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+  <dialog id="artDialog" class="art-dialog" aria-labelledby="artTitle">
+    <button id="artClose" class="close-button" aria-label="Return picture to its candle">×</button>
+    <figure><img id="artImage" src="" alt=""><figcaption><p class="eyebrow" data-i18n="artEyebrow">FROM A GOLDEN CANDLE</p><h2 id="artTitle"></h2><p id="artDescription"></p><div class="art-footer"><span id="artMeta"></span><button id="artSource" class="source-link" data-i18n="source">Return to the conversation ↗</button></div></figcaption></figure>
+  </dialog>
+  <dialog id="storyDialog" class="story-dialog" aria-labelledby="storyTitle">
+    <header><div><p class="eyebrow" data-i18n="storyEyebrow">WHERE IT BEGAN</p><h2 id="storyTitle"></h2></div><button id="storyClose" class="close-button" aria-label="Close conversation">×</button></header>
+    <p class="fiction-label" data-i18n="fictionLabel">Fictional conversation · created for this demo</p>
+    <div id="storyMessages" class="story-messages"></div>
+    <p class="story-footnote" data-i18n="storyFootnote">A creation is richer when you can return to its first spark.</p>
+  </dialog>
+  <dialog id="collectionDialog" class="collection-dialog" aria-labelledby="collectionTitle">
+    <header><div><p class="eyebrow" data-i18n="collectionEyebrow">A FEW THINGS WORTH KEEPING</p><h2 id="collectionTitle" data-i18n="collectionTitle">The collection</h2></div><button id="collectionClose" class="close-button" aria-label="Close collection">×</button></header>
+    <div id="collectionGrid" class="collection-grid"></div>
+  </dialog>
+  <dialog id="aboutDialog" class="small-dialog" aria-labelledby="aboutTitle">
+    <button id="aboutClose" class="close-button" aria-label="Close about">×</button>
+    <p class="eyebrow" data-i18n="aboutEyebrow">THE IDEA BEHIND THE HALL</p><h2 id="aboutTitle" data-i18n="aboutTitle">Keep the spark.</h2>
+    <p data-i18n="aboutText">We create pictures, music and stories in conversation. Then we lose them in folders. Magic Hall turns those scattered creations into a place you can return to—and keeps the conversation attached.</p>
+    <p class="about-detail" data-i18n="aboutDetail">This public edition uses only an original fictional collection. Every gold candle opens art, every blue candle plays music, and every story opens here in the hall.</p>
+    <button id="aboutExplore" class="enter-button small" data-i18n="aboutExplore">Back to the hall</button>
+  </dialog>
+  <dialog id="settingsDialog" class="small-dialog settings-dialog" aria-labelledby="settingsTitle">
+    <button id="settingsClose" class="close-button" aria-label="Close atmosphere settings">×</button><p class="eyebrow" data-i18n="settingsEyebrow">MAKE YOURSELF AT HOME</p><h2 id="settingsTitle" data-i18n="settingsTitle">Atmosphere</h2>
+    <label class="setting"><span data-i18n="candlelight">Candlelight</span><input id="glow" type="range" min="0.4" max="1.6" step="0.1" value="1" aria-label="Candlelight brightness"></label>
+    <label class="setting"><span data-i18n="volume">Music volume</span><input id="volume" type="range" min="0" max="1" step="0.05" value="0.35" aria-label="Music volume"></label>
+    <label class="setting switch"><span data-i18n="gentleMotion">Gentle motion</span><input id="motion" type="checkbox" checked></label>
+    <button id="copyLook" class="text-button" data-i18n="copyLook">Copy atmosphere settings</button><p id="copyStatus" role="status"></p>
+  </dialog>
+  <audio id="audio" preload="none" loop></audio>
+  <noscript><div class="noscript">Magic Hall needs JavaScript to light the candles. Enable JavaScript and reload.</div></noscript>
+  <script src="hall.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "prepared_at": "2026-11-20",
+  "title": "Magic Hall",
+  "tagline": "A candlelit home for art, music, and their stories.",
+  "tagline_character_count": 51,
+  "primary_category": "Costume Contest",
+  "bonus_categories": [],
+  "built_with": [
+    "Kiro",
+    "Kiro Crew",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Canvas",
+    "JSON",
+    "SVG"
+  ],
+  "links": {
+    "application": null,
+    "github_repository": null,
+    "youtube_demo": null
+  },
+  "project_story_sections": {
+    "Inspiration": "Images and songs can lose their meaning when they become files in a folder. I wanted a place to enjoy a work and return to the idea that started it. Magic Hall brings art, music, and their origins into a candlelit room.",
+    "What it does": "Gold candles open pictures. Blue candles play music. Visitors can change the picture or track, control playback, and open the story behind a work. The public demo includes newly created sample media and clearly labeled fictional conversations, so the full experience can be explored without my personal collection.",
+    "How we built it": "Magic Hall began on November 17, 2026, during the hackathon. Kiro Crew designed and coded the original application, guided by my goals and visual feedback. It uses HTML, CSS, vanilla JavaScript, and Canvas 2D. The public edition loads local JSON and bundled media, with no application backend or runtime AI service.",
+    "Challenges we ran into": "The main design challenge was making a magical space understandable. Candle colors needed to explain the controls while leaving the artwork and music at the center. Preparing a self-contained public collection also required separating the application's behavior from private media and source links.",
+    "Accomplishments that we're proud of": "A complete visit takes only a few actions: enter the hall, choose a candle, enjoy a work, and revisit its origin. The original application was accepted for my own use. I especially value keeping a creative work connected to the moment that inspired it.",
+    "What we learned": "An interface can preserve context as well as display content. The candle theme helps visitors choose a medium, while the origin story gives a work another layer of meaning. Kiro translated concrete creative direction and feedback into working browser interactions.",
+    "What's next for Magic Hall": "Future work could make it easier to assemble a personal collection and attach a short origin note to each work, while preserving the calm, deliberate experience of choosing what to view or hear."
+  },
+  "category_fit": "The candlelit theme explains the application. Gold candles hold pictures and blue candles hold music. Choosing a candle reveals a creative work, and its associated story returns the visitor to the idea behind it. The magical atmosphere gives different media a shared place to explore.",
+  "how_kiro_was_used": "Kiro Crew designed and coded the original Magic Hall application from November 17, 2026. I provided the goal, aesthetic direction, and feedback: a magical room with gold candles for pictures, blue candles for songs, and a way to return to the conversation behind a work. Codex assisted with the original background and content preparation. The public adaptation was prepared with ChatGPT/Codex assistance from November 20. Its documentation distinguishes that adaptation from the original Kiro work and identifies the actual dates and contributors.",
+  "new_project_and_reuse_disclosure": "The submitted Magic Hall application was started during the hackathon on November 17, 2026. The idea grew from an earlier personal creative archive. The earlier archive infrastructure is not presented as new hackathon work. The public edition has its own small sample collection, with asset origins and licenses documented in the repository.",
+  "public_demo_asset_disclosure": "The public demonstration contains newly created sample artwork and instrumental audio, plus fictional conversations. It does not include my private image library, personal songs, or real conversations. The asset manifest identifies the tools, generation methods, attribution, and distribution terms of the bundled assets.",
+  "judge_instructions": [
+    "Open the application URL in a modern browser.",
+    "Select a gold candle to open an artwork and use the picture control to discover another sample.",
+    "Select a blue candle to play an instrumental sample; try pause, volume, and track selection.",
+    "Open the source or story control to read the fictional conversation associated with a work.",
+    "Close the overlay and return to the hall."
+  ],
+  "video": {
+    "target_duration_seconds": 90,
+    "narration_word_count": 167,
+    "language": "English",
+    "publishing_platform": "YouTube",
+    "storyboard": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 12,
+        "visual": "Show the working hall at its normal starting state. Move the pointer toward the candles.",
+        "narration": "Magic Hall gives art, music, and the stories behind them a place to live. Instead of opening another folder, you enter a candlelit room.",
+        "caption": "Magic Hall — art, music, and their stories"
+      },
+      {
+        "start_seconds": 12,
+        "end_seconds": 28,
+        "visual": "Click a gold candle, show a sample artwork, then use the actual change-picture control once.",
+        "narration": "Choose a gold candle to open a picture. Each work gets space to be seen. You can move to another piece without leaving the hall.",
+        "caption": "Gold candles open art"
+      },
+      {
+        "start_seconds": 28,
+        "end_seconds": 43,
+        "visual": "Return to the hall, select a blue candle, let the sample music play briefly, and demonstrate pause or volume.",
+        "narration": "Choose a blue candle to play a song. Pause it, change the volume, or discover another track. The color of each candle tells you what it holds.",
+        "caption": "Blue candles play music"
+      },
+      {
+        "start_seconds": 43,
+        "end_seconds": 58,
+        "visual": "Open the source-story panel and show one short fictional conversation. Keep the fictional-demo label legible.",
+        "narration": "A work can also lead back to its origin. Here, a short conversation restores the idea behind the image or music. The public demo uses fictional conversations and newly created sample media.",
+        "caption": "Revisit the idea behind a work"
+      },
+      {
+        "start_seconds": 58,
+        "end_seconds": 73,
+        "visual": "Briefly show the public README and truthful Kiro contribution record, then return to the working application.",
+        "narration": "Kiro Crew designed and coded the original hall during this hackathon. It uses HTML, CSS, JavaScript, and Canvas. The public edition keeps the same interaction with a small, shareable collection.",
+        "caption": "Built with Kiro Crew"
+      },
+      {
+        "start_seconds": 73,
+        "end_seconds": 90,
+        "visual": "Finish with the hall and one final artwork. Show the verified application and GitHub URLs after they exist.",
+        "narration": "This is our Costume Contest entry: a magical interface that helps you choose and revisit creative memories. The application and its sample collection are available for judges to try.",
+        "caption": "Light a candle. Rediscover a creative memory."
+      }
+    ]
+  },
+  "internal_checklist": {
+    "purpose": "Editorial checklist only. Do not paste this section into the public product story.",
+    "items": [
+      {
+        "id": "live_interactions",
+        "status": "pending_final_review",
+        "check": "Verify gold and blue candle actions, change-picture and change-track controls, pause, volume, source-story panel, and return to the hall. Remove any unsupported claim from the story, instructions, and video together."
+      },
+      {
+        "id": "assets",
+        "status": "pending_final_review",
+        "check": "Verify that every bundled asset is distributable, the asset manifest matches the actual files, and sample conversations are labeled fictional. Confirm the public repository has no private archive data, private links, or credentials."
+      },
+      {
+        "id": "kiro_provenance",
+        "status": "pending_final_review",
+        "check": "Check truthful Kiro contribution evidence and the root .kiro directory. Later documentation must retain its actual date and author; do not imply that November 20 documents existed in the original November 17 build."
+      },
+      {
+        "id": "category_theme",
+        "status": "pending_final_review",
+        "check": "Confirm that the final visual treatment satisfies Costume Contest's spooky or Halloween theme and that the candle theme supports navigation."
+      },
+      {
+        "id": "public_repository",
+        "status": "pending_final_review",
+        "check": "Verify the public GitHub repository, open-source license, all required runtime files, and setup instructions."
+      },
+      {
+        "id": "application_link",
+        "status": "pending_final_review",
+        "check": "Replace null with the verified application URL and confirm judges can access the sample edition."
+      },
+      {
+        "id": "video",
+        "status": "pending_final_review",
+        "check": "Record the working application, use only distributable media, publish the English demonstration on YouTube, and replace null with its real URL. Keep the video under three minutes."
+      },
+      {
+        "id": "submission_video",
+        "status": "pending_final_review",
+        "check": "Verify the video and links on the actual hackathon submission, not only on the general Devpost project page."
+      }
+    ],
+    "official_sources": [
+      "https://kiroween.devpost.com/rules",
+      "https://help.devpost.com/article/126-know-your-submission-steps",
+      "https://help.devpost.com/article/85-uploading-a-demo-video"
+    ]
+  }
+}
